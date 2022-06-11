@@ -1,0 +1,233 @@
+.progress-bar-container {
+    width: 500px;
+    height: 50px;
+    margin: 50px 0px;
+    background: black;
+}
+
+.progress-bar-indicator {
+    height: 100%;
+    background-image: linear-gradient(to right, red, green, blue);
+    border-radius: 25px;
+}
+
+#indicator-1 {
+    width: 80%;
+}
+
+.mainContent {
+    position: relative;
+    top: 5vw;
+    /* border: 2px solid black; */
+    height: 600px;
+}
+
+.mainContent>div>div {
+    /* border: 2px solid white; */
+    border-right: 2px solid white;
+    /* box-shadow: 2px 2px #8888883a; */
+    /* padding: 4vh; */
+    margin: 3vh;
+}
+
+.left {
+    /* border: none; */
+    background-color: white;
+    position: relative;
+    right: 4.8vw;
+    top: 5vh;
+    padding-left: 1vw;
+    margin-left: 1vw;
+    /* margin-bottom: 0; */
+    /* height: 300px; */
+}
+
+.left {
+    background: white;
+    height: 350px;
+    margin: 50px;
+    padding: 20px;
+    position: relative;
+}
+
+.left::after {
+    border-radius: 0 0 200px 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    content: '';
+    display: block;
+    height: 300px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.left>button {
+    display: block;
+    background-color: white;
+    padding-bottom: 3.3vh;
+}
+
+.leftBtn>a {
+    text-decoration: none;
+    /* border: none; */
+    background-color: white;
+}
+
+.mid {
+    width: 54vw;
+}
+
+.videoPlayer {
+    position: relative;
+    top: 5vh;
+}
+
+#outer {
+    width: 50vw;
+    height: 50vh;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.video {
+    position: relative;
+    left: 0;
+    top: 0;
+    opacity: 1;
+}
+
+.right {
+    /* border: 1px solid black; */
+    margin: 0;
+    padding: 0;
+    position: relative;
+    right: 1vw;
+    width: 240px;
+    text-align: right;
+}
+
+.rightText {
+    box-shadow: 0 0 4px #0000001f;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding: 1vh;
+    text-align: right;
+}
+
+.descContent {}
+
+.row {
+    margin-top: 3vh;
+    padding-top: 4vh;
+}
+
+.descContent>section {
+    margin-bottom: 8vh;
+}
+
+.circular--square {
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+}
+
+.outerCol{
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    width: 205px;
+    height: 205px;
+    background: linear-gradient(to right, red, green);
+}
+.col::before{
+    content: 'Prof. ';
+    display: block;
+    /* height: 300px; */
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+/* .mainContent {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 43vw;
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
+}
+
+.leftBtn {
+    margin: 2vh;
+    border: 0px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.leftBtn>a {
+    text-decoration: none;
+} */
+
+
+
+#container {
+    width: 200px;
+    height: 20px;
+    margin: 0 auto;
+    position: relative;
+    /* top: 50px; */
+    bottom: 28px;
+    transform: translateY(-50%);
+    border-radius: 35px;
+    border: 3px solid white;
+    overflow: hidden;
+}
+
+.child {
+    width: 100%;
+    height: 100%;
+}
+
+.progress {
+    color: white;
+    text-align: center;
+    line-height: 75px;
+    font-size: 35px;
+    font-family: "Segoe UI";
+    animation-direction: reverse;
+    background: #e5405e;
+    background: linear-gradient(to right, rgb(106, 57, 170) 0%, white 40%);
+}
+
+.shrinker {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
+.timelapse {
+    animation-name: timelapse;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(.86, .05, .4, .96);
+}
+
+@keyframes timelapse {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
