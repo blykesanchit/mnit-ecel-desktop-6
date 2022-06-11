@@ -11,6 +11,7 @@
     border-radius: 25px;
 }
 
+/*  */
 #indicator-1 {
     width: 80%;
 }
@@ -77,18 +78,21 @@
     /* padding-bottom: 1vh; */
 }
 
-.left>button:hover,.left>button>a:hover{
+.left>button:hover,
+.left>button>a:hover {
     background: url(/ecel/img/leftBtnColor.jpg);
     color: white;
     /* margin-bottom: 0; */
-} 
-.left>button>a:hover{
+}
+
+.left>button>a:hover {
     padding-bottom: 0;
     margin-bottom: 0;
     height: 80%;
 }
 
-.left_links:active,.left>button>a:active{
+.left_links:active,
+.left>button>a:active {
     background: url(/ecel/img/leftBtnColor.jpg);
     color: white;
 }
@@ -128,7 +132,7 @@
 }
 
 .rightText {
-    box-shadow: 0 0 4px #0000001f;
+    box-shadow: 0 0 7px #00000044;
     margin-top: 2vh;
     margin-bottom: 2vh;
     padding: 1vh;
@@ -153,7 +157,7 @@
     border-bottom-left-radius: 50% 50%;
 }
 
-.outerCol{
+.outerCol {
     border-top-left-radius: 50% 50%;
     border-top-right-radius: 50% 50%;
     border-bottom-right-radius: 50% 50%;
@@ -162,16 +166,34 @@
     height: 205px;
     background: linear-gradient(to right, red, green);
 }
-.col::after{
-    content: '';
-    display: block;
-    /* height: 300px; */
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1;
+
+.ins {
+    display: flex;
+    width: 250px;
+    height: 250px;
 }
+
+.end-btn {
+    margin-top: 2vw;
+    background-color: #DAA521;
+    border: none;
+    width: 15vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    color: #FFFFFF;
+    border-radius: 0.5vw;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid green;
+}
+
 /* .mainContent {
     display: flex;
     flex-direction: row;
@@ -248,4 +270,32 @@
     100% {
         width: 60%;
     }
+}
+
+.aboutTitle{
+    margin-bottom: 4vh;
+    padding-bottom: 4vh;
+}
+
+.instructor_name{
+    position: relative;
+    bottom: 2vh;
+    left: 2vw;
+}
+
+.aboutCel {
+    margin-bottom: 3vh;
+    padding-bottom: 20vh;
+}
+
+#footer {
+    background: hsla(275, 57%, 73%, 1);
+
+    background: linear-gradient(90deg, hsla(275, 57%, 73%, 1) 0%, hsla(266, 57%, 53%, 1) 100%);
+
+    /* background: -moz-linear-gradient(90deg, hsla(275, 57%, 73%, 1) 0%, hsla(266, 57%, 53%, 1) 100%); */
+
+    /* background: -webkit-linear-gradient(90deg, hsla(275, 57%, 73%, 1) 0%, hsla(266, 57%, 53%, 1) 100%); */
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#C193E1", endColorstr="#7F44CC", GradientType=1);
 }
